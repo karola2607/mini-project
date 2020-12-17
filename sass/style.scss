@@ -55,9 +55,9 @@ body {
    justify-content: flex-start;
    align-items: center;
    list-style-type: none;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 14px;
-   font-weight: 600;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+   font-size: 15px;
  }
 
 .navigation .menu ul li {
@@ -108,7 +108,7 @@ body {
   padding: 25px;
   border-radius: 3px;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -120,3 +120,54 @@ body {
   background-position: 100% 0;
   background-size: 300%;
  }
+
+ /* Section "Services" */
+
+.services .container {
+  height: 500px;
+  padding: 100px 150px;
+  background-color: white;
+}
+
+.services .container .row {
+  text-align: center;
+}
+
+.services .container .row:first-of-type {
+   margin-bottom: 50px;
+}
+
+.services .container .row h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.services .container .row h5 {
+  font-size: 18px;
+  color: #535c68;
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 0;
+  margin: 0;
+} 
+
+.services .container .row i {
+  font-size: 30px;
+  color: #f1c40f;
+  height: 60px;
+  width: 60px;
+  border: solid 3px #f1c40f;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.services .container .row p:first-of-type {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.services .container .row p:nth-of-type(2) {
+  color: #747d8c;
+}
