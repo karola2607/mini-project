@@ -1,0 +1,41 @@
+/* Global style */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://i.postimg.cc/Ss5k19x8/pexels-jessica-lewis-583848.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 2px solid red;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate -50%, -50%;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-color: yellow;
+  color: white;
+  background-position: 100% 0;
+  background-size: 300%;
+}
+/*# sourceMappingURL=style.css.map */
