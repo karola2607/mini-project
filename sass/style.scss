@@ -160,7 +160,7 @@ body {
   width: 60px;
   border: solid 3px #f1c40f;
   border-radius: 50%;
-  padding: 10px;
+  padding: 9px;
 }
 
 .services .container .row p:first-of-type {
@@ -248,7 +248,7 @@ body {
 .page-footer ul {
     display: flex;
     list-style-type: none;
-    border: solid 3px red;
+    padding-left: 30px;
   }
 
 .page-footer ul li {
@@ -267,10 +267,12 @@ body {
     text-align: center;
   }
 
+
   .page-footer .container .row p {
     font-size: 14px;
     text-weight: light;
     font-family: 'Open Sans', sans-serif;
     color: #747d8c;
+    padding: 20px 0;
   }
 
