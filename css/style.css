@@ -167,4 +167,68 @@ body {
 .services .container .row p:nth-of-type(2) {
   color: #747d8c;
 }
+
+/* Section "Our portfolio" */
+.portfolio .container {
+  background-color: #f1f2f6;
+  padding: 100px 150px;
+  height: 1100px;
+}
+
+.portfolio .container .row {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio .container .row:first-of-type {
+  margin-bottom: 50px;
+}
+
+.portfolio .container .row h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.portfolio .container .row h5 {
+  font-size: 18px;
+  color: #535c68;
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 0;
+  margin: 0;
+}
+
+.portfolio .container .row p:first-of-type {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.portfolio .container .row p:nth-of-type(2) {
+  color: #747d8c;
+  font-style: italic;
+}
+
+.portfolio .container .row img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .container .row .card {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.portfolio .container .row .card .card-body {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  padding: 20px;
+  background-color: white;
+}
 /*# sourceMappingURL=style.css.map */
