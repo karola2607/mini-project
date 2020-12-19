@@ -269,4 +269,79 @@ body {
   color: #747d8c;
   padding: 20px 0;
 }
+
+/* Media */
+@media (max-width: 991px) {
+  .navigation .menu ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .navigation .menu ul li {
+    padding-right: 10px;
+  }
+  .splash .container .row {
+    height: 450px;
+  }
+  .splash-inner h5 {
+    margin: 5px;
+  }
+  .splash-inner h3 {
+    margin: 0;
+  }
+  .splash-inner {
+    line-height: normal;
+  }
+  .btn {
+    padding: 20px;
+  }
+  .services {
+    height: 1000px;
+  }
+  .services .container {
+    height: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .portfolio .container {
+    height: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .portfolio .container .row .card {
+    padding-bottom: 30px;
+  }
+  .page-footer .container .row p {
+    text-align: center;
+  }
+  .page-footer ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .page-footer .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .splash-inner h5 {
+    font-size: 25px;
+  }
+  .splash-inner h3 {
+    font-size: 60px;
+  }
+  .page-footer .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .services .container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
