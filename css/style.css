@@ -7,6 +7,7 @@ body {
   background-color: #2f3640;
 }
 
+/* Variables */
 /*Navigation*/
 .main {
   height: 700px;
@@ -15,6 +16,12 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media (max-width: 375px) {
+  .main {
+    height: 100%;
+  }
 }
 
 .main::before {
@@ -36,7 +43,7 @@ body {
 .brand-name {
   text-align: center;
   padding-top: 15px;
-  font-family: 'Rouge Script', cursive;
+  font-family: "Rouge Script", cursive;
   font-size: 40px;
   font-weight: 800;
 }
@@ -44,6 +51,12 @@ body {
 .brand-name a {
   color: #f1c40f;
   text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .navigation .menu ul {
@@ -54,9 +67,18 @@ body {
   -ms-flex-align: center;
       align-items: center;
   list-style-type: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .navigation .menu ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
 }
 
 .navigation .menu ul li {
@@ -64,7 +86,13 @@ body {
   padding-right: 40px;
 }
 
-.navigation .menu ul li a {
+@media (max-width: 991px) {
+  .navigation .menu ul li {
+    padding-right: 10px;
+  }
+}
+
+.navigation .menu ul a {
   color: white;
   text-decoration: none;
 }
@@ -78,11 +106,23 @@ body {
       align-items: center;
 }
 
+@media (max-width: 991px) {
+  .splash .container .row {
+    height: 450px;
+  }
+}
+
 .splash-inner {
   position: absolute;
   color: white;
   text-align: center;
   line-height: 10px;
+}
+
+@media (max-width: 991px) {
+  .splash-inner {
+    line-height: normal;
+  }
 }
 
 .splash-inner h5 {
@@ -91,10 +131,34 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 991px) {
+  .splash-inner h5 {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .splash-inner h5 {
+    font-size: 25px;
+  }
+}
+
 .splash-inner h3 {
   font-size: 70px;
   font-weight: 700;
-  font-family: 'Candal', sans-serif;
+  font-family: "Candal", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .splash-inner h3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .splash-inner h3 {
+    font-size: 60px;
+  }
 }
 
 .btn {
@@ -105,7 +169,7 @@ body {
   padding: 25px;
   border-radius: 3px;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -118,11 +182,38 @@ body {
   background-size: 300%;
 }
 
+@media (max-width: 991px) {
+  .btn {
+    padding: 20px;
+  }
+}
+
 /* Section "Services" */
+@media (max-width: 991px) {
+  .services {
+    height: 1000px;
+  }
+}
+
 .services .container {
   height: 500px;
   padding: 100px 150px;
   background-color: white;
+}
+
+@media (max-width: 991px) {
+  .services .container {
+    height: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .services .container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 .services .container .row {
@@ -134,7 +225,7 @@ body {
 }
 
 .services .container .row h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 36px;
   margin: 0;
   padding-bottom: 0;
@@ -161,11 +252,11 @@ body {
 
 .services .container .row p:first-of-type {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .services .container .row p:nth-of-type(2) {
-  color: #747d8c;
+  color: #535c68;
 }
 
 /* Section "Our portfolio" */
@@ -175,17 +266,25 @@ body {
   height: 1100px;
 }
 
+@media (max-width: 991px) {
+  .portfolio .container {
+    height: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
 .portfolio .container .row {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.portfolio .container .row:first-of-type {
+.portfolio .container.row:first-of-type {
   margin-bottom: 50px;
 }
 
 .portfolio .container .row h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 36px;
   margin: 0;
   padding-bottom: 0;
@@ -202,11 +301,11 @@ body {
 
 .portfolio .container .row p:first-of-type {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .portfolio .container .row p:nth-of-type(2) {
-  color: #747d8c;
+  color: #535c68;
   font-style: italic;
 }
 
@@ -223,6 +322,7 @@ body {
   position: relative;
   -ms-flex-direction: column;
       flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .portfolio .container .row .card .card-body {
@@ -239,6 +339,12 @@ body {
   background-color: white;
 }
 
+@media (max-width: 991px) {
+  .page-footer .container {
+    padding: 0;
+  }
+}
+
 .page-footer ul {
   display: -ms-flexbox;
   display: flex;
@@ -246,12 +352,21 @@ body {
   padding-left: 30px;
 }
 
+@media (max-width: 991px) {
+  .page-footer ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+}
+
 .page-footer ul li {
   font-size: 0;
   padding: 5px;
 }
 
-.page-footer ul li i {
+.page-footer ul i {
   font-size: 20px;
   height: 40px;
   width: 40px;
@@ -264,77 +379,14 @@ body {
 
 .page-footer .container .row p {
   font-size: 14px;
-  text-weight: light;
-  font-family: 'Open Sans', sans-serif;
-  color: #747d8c;
+  font-family: "Open Sans", sans-serif;
+  color: #535c68;
   padding: 20px 0;
 }
 
-/* Media */
 @media (max-width: 991px) {
-  .navigation .menu ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-  .navigation .menu ul li {
-    padding-right: 10px;
-  }
-  .splash .container .row {
-    height: 450px;
-  }
-  .splash-inner h5 {
-    margin: 5px;
-  }
-  .splash-inner h3 {
-    margin: 0;
-  }
-  .splash-inner {
-    line-height: normal;
-  }
-  .btn {
-    padding: 20px;
-  }
-  .services {
-    height: 1000px;
-  }
-  .services .container {
-    height: 100%;
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-  .portfolio .container {
-    height: 100%;
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-  .portfolio .container .row .card {
-    padding-bottom: 30px;
-  }
   .page-footer .container .row p {
     text-align: center;
-  }
-  .page-footer ul {
-    -ms-flex-pack: center;
-        justify-content: center;
-    -webkit-padding-start: 0;
-            padding-inline-start: 0;
-  }
-  .page-footer .container {
-    padding: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .splash-inner h5 {
-    font-size: 25px;
-  }
-  .splash-inner h3 {
-    font-size: 60px;
-  }
-  .page-footer .container {
-    padding: 0;
   }
 }
 
